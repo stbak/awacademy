@@ -1,6 +1,7 @@
-/* body {
+body {
     background-color: beige;
-} */
+    font-size: 1em;
+}
 
 img {
     width: 100%;
@@ -14,4 +15,12 @@ div {
 
 .intro {
     font-weight: bold;
+}
+
+p {
+    font-size: smaller;
+}
+
+a {
+    font-stretch: extra-expanded;
 }
