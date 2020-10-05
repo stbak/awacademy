@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Giant Panda</title>
         <link rel="stylesheet" href="pandastyle.css">
+        <script lang="javascript">
+            openMe() {
+                alert("I'm in!");
+                document.getElementById("sideInfo").style.position.fixed;
+                document.getElementById("sideInfo").style.position.right="0px";
+            }
+        </script>
     </head>
     <body>
         <div class="main">
@@ -22,16 +29,17 @@
             </p>
             <img src="img/Lightmatter_panda.jpg"/>
             <div class="divider"></div>
-            <div id="noteHolder">
-                
-                <div class="notes">Left</div>
-                <div class="notes">Middle</div>
-                <div class="notes">Right</div>
-                
-            </div>
-            <div class="divider"></div>
+            
             
         </div>
+        <div id="noteHolder">
+                
+            <div class="notes">Left</div>
+            <div class="notes">Middle</div>
+            <div class="notes">Right</div>
+            
+        </div>
+        <div id="sideInfo" class="rightSideInfo"><a href="" onclick="document.getElementById('id1').style.backgroundColor = 'red'"><--</a> Some additional info</div>
         
     </body>
 
@@ -39,5 +47,7 @@
     .notes {float: left; min-width: 25%; min-height: 50px; background-color: seagreen; margin: 5px;}
     .divider {width: 100%; height: 1px;}
 </style>
+
+
 
 </html>
