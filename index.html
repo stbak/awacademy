@@ -1,12 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>GiantPanda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Giant Panda</title>
+        <link rel="stylesheet" href="pandastyle.css">
+        <script lang="javascript">
+            openMe() {
+                alert("I'm in!");
+                document.getElementById("sideInfo").style.position.fixed;
+                document.getElementById("sideInfo").style.position.right="0px";
+            }
+        </script>
     </head>
     <body>
-        <div class="main" style="width:75%; margin-left: 100px; border-left-width: 2px; border-left-color: black; border-right-color: black;">
+        <div class="main">
             <h1>Giant Panda</h1>
-            <p>
-                Tidigare har pandan kategoriserats som halvbjörn, men molekylärgenetiska studier visar att den är en björn.[2] Pandan har svartvit tät päls och väger som vuxen 70–150 kg.<br> 
+            <p class="intro">
+                Tidigare har PANDAN kategoriserats som "halvbjörn", men molekylärgenetiska studier visar att den är en björn. Pandan har svartvit tät päls och väger som vuxen 70–150 kg.<br> 
                 Till skillnad från andra björnar är jättepandan en utpräglad växtätare, som främst äter bambu men kan sällsynt även äta animalier.<br>
                 Idag förekommer den vilt bara i Kina men tidigare fanns björnen även i andra delar av östra Asien.
             </p>
@@ -16,7 +27,26 @@
             <p>
                 <i>Gåvor</i> i form av pandabjörnar till zoologiska trädgårdar har använts som ett sätt för Folkrepubliken Kina att förbättra sina relationer med stater i Västvärlden.
             </p>
-            <img src="img/Lightmatter_panda.jpg" style="border-width: 1px; border-radius: 10px; border-color: red;"/>
+            <img src="img/Lightmatter_panda.jpg"/>
+            <div class="divider"></div>
+            
+            
+        </div>
+        <div id="noteHolder">
+                
+            <div class="notes">Watch Panda video</div>
+            <div class="notes">Middle</div>
+            <div class="notes">Right</div>
+            
+        </div>
+        <div id="sideInfo" class="rightSideInfo"><a href="" onclick="document.getElementById('id1').style.backgroundColor = 'red'"><--</a> Some additional info</div>
+=======
+            <div class="notes">Left</div>
+            <div class="notes">
+            Middle
+            </div>
+            <div class="notes">Right</div>
+            <div class="divider"></div>
             <table>
                 <thead>
                     <tr>
@@ -32,9 +62,14 @@
                 </thead>
             </table>
         </div>
+>>>>>>> 4853b55... Changed styles for images
+        
     </body>
-</html>
 
 <style>
     .main { width:75%; margin-left: 100px; border-left-width: 2px; border-left-color: black; border-right-color: black;}
 </style>
+
+
+
+</html>
